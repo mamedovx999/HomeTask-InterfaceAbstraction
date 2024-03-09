@@ -8,9 +8,9 @@ namespace HomeTask_InterfaceAbstraction
 {
     internal class Square : Figure
     {
-        public  double _side { get; set; }
+        private int _side;
 
-        public double Side
+        public int Side
         {
             get
             {
@@ -27,7 +27,7 @@ namespace HomeTask_InterfaceAbstraction
             
         }
 
-        public Square(double side)
+        public Square(int side)
         {
             Side = side;
             
@@ -35,7 +35,7 @@ namespace HomeTask_InterfaceAbstraction
 
         public override int CalcArea()
         {
-            throw new NotImplementedException();
+            return Side * Side;
         }
     }   
 

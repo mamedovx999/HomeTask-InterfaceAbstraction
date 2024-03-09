@@ -19,18 +19,18 @@
                     case 1:
                         {
                             Console.WriteLine("Square methodu");
-                            double side = Convert.ToDouble(Console.ReadLine());
+                            int side = Convert.ToInt32(Console.ReadLine());
                             Square square = new Square(side);
-                            Console.WriteLine($"Sqaure:" + square.CalcArea);
+                            Console.WriteLine($"Sqaure:" + square.CalcArea());
                             break;
                         }
                     case 2:
                         Console.WriteLine("Enter Width method");
-                        double width = Convert.ToDouble(Console.ReadLine());
+                      int width = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Enter Length method");
-                        double lenght = Convert.ToDouble(Console.ReadLine());
+                        int lenght = Convert.ToInt32(Console.ReadLine());
                         Rectangular rectangular = new Rectangular(width, lenght);
-                        Console.WriteLine($"Rectangular:" + rectangular.CalcArea);
+                        Console.WriteLine($"Rectangular:" + rectangular.CalcArea());
                         break;
                     case 0:
                         Console.WriteLine("Exit");

@@ -8,11 +8,11 @@ namespace HomeTask_InterfaceAbstraction
 {
     internal class Rectangular : Figure
     {
-        public double _width { get; set; }
-        public double _length { get; set; }
+        private int _width;
+        private int _length;
 
 
-        public double Width
+        public int Width
         {
             get
             {
@@ -27,7 +27,7 @@ namespace HomeTask_InterfaceAbstraction
                 _width = value;
             }
         }
-        public double Length
+        public int Length
         {
             get
             {
@@ -43,7 +43,7 @@ namespace HomeTask_InterfaceAbstraction
             }
         }
 
-        public Rectangular(double width , double lentgh)
+        public Rectangular(int width , int lentgh)
         {
             Width = width;
             Length = lentgh;
@@ -51,7 +51,7 @@ namespace HomeTask_InterfaceAbstraction
 
         public override int CalcArea()
         {
-            throw new NotImplementedException();
+            return Width * Length;
         }
     }
 }
